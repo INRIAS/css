@@ -33,8 +33,167 @@ p {
 }
 
 
-/*Da*/
+/*Dar estilo con clases nos permite reutilizar nuestro codigo CSS*/
 
-.texto-32 {
+.bg-skyblue {
+    background-color: skyblue;
+}
+
+.bg-steelblue {
+    background-color: steelblue;
+}
+
+.text-20 {
+    font-size: 20px;
     color: teal;
+}
+
+.text-32 {
+    font-size: 32px;
+}
+
+.text-white {
+    color: beige;
+}
+
+
+/*Selectores avanzados*/
+
+
+/*----S. Hijos*/
+
+.hijos-directos>li {
+    background-color: thistle;
+}
+
+.hijos-descendientes b {
+    background-color: thistle;
+}
+
+
+/*----S. Hermanos*/
+
+
+/*generales:los estilos se aplican a todos los tag por debajo de la referencia*/
+
+.hermanos-general~li {
+    background-color: thistle;
+}
+
+
+/*Adyacentes: los estilos se aplican a todos los tag siguiente de la referencia*/
+
+.hermanos-adyacentes+li {
+    background-color: thistle;
+}
+
+
+/*----S. Atributo*/
+
+
+/*se ejerce por medio de los corchetes [] */
+
+.selectores-atributos a[href] {
+    color: orangered;
+}
+
+.selectores-atributos a[target="_blank"] {
+    font-weight: bolder;
+}
+
+
+/* el * es un comodin que solo apunta al que contenga dicha referencia*/
+
+.selectores-atributos a[href*=jonmircha] {
+    font-size: 24px;
+}
+
+
+/* ^ el circunflejo (comodin) apunta a la refecia siempre y cuando con esta inicie*/
+
+.selectores-atributos a[href^="http://"] {
+    text-decoration: none;
+}
+
+
+/* $ el peso (comodin) apunta a la refecia siempre y cuando con esta termine*/
+
+.selectores-atributos a[href$=".com"] {
+    text-decoration: none;
+    color: blue;
+}
+
+
+/* ~ la virgulilla (comodin) apunta a la refecia si la contiene en una lista separada por espacios*/
+
+.selectores-atributos a[class~="cursos"] {
+    background-color: steelblue;
+}
+
+
+/* | el pipe (comodin) apunta a la refecia si la contiene en una lista separada por espacios o despues un guion medio -*/
+
+.selectores-atributos a[class|="menu"] {
+    font-style: italic;
+}
+
+
+/*----Selector Universal*/
+
+
+/* (*) Este aplicara a todos las etiquetas dentro del html*/
+
+* {
+    font-family: sans-serif;
+}
+
+.selector-universal * {
+    font-size: 24px;
+}
+
+
+/*PSEUDOCLASES*/
+
+
+/* Pseudoclase: Dan estilo dependiendo del contexto, posicion o estado del elemento*/
+
+
+/*https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes*/
+
+.form-pseudoclases *:required {
+    border-color: yellow;
+}
+
+.form-pseudoclases *:valid {
+    border-color: green;
+}
+
+.form-pseudoclases *:invalid {
+    border-color: red;
+}
+
+.form-pseudoclases *:focus {
+    background-color: skyblue;
+}
+
+.form-pseudoclases *:disabled {
+    background-color: pink;
+}
+
+.menu-pseudoclases a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.menu-pseudoclases a:visited {
+    color: olivedrab;
+    text-decoration: none;
+}
+
+.p-pseudoclases:hover {
+    font-size: 20px;
+}
+
+#temario-css:target {
+    background-color: lightgrey;
 }
