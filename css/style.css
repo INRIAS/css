@@ -155,10 +155,10 @@ p {
 /*PSEUDOCLASES*/
 
 
-/* Pseudoclase: Dan estilo dependiendo del contexto, posicion o estado del elemento*/
+/* Pseudoclase: Dan estilo dependiendo del contexto, posicion o estado del elemento
+Estas se generan con (:)
 
-
-/*https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes*/
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes*/
 
 .form-pseudoclases *:required {
     border-color: yellow;
@@ -195,5 +195,101 @@ p {
 }
 
 #temario-css:target {
-    background-color: lightgrey;
+    background-color: lightgreen;
+}
+
+.lista-pseudoclases li:first-child {
+    color: green;
+}
+
+.lista-pseudoclases li:last-child {
+    color: violet;
+}
+
+.lista-pseudoclases li:nth-child(3n) {
+    color: navy;
+}
+
+.lista-pseudoclases li:nth-child(4n) {
+    color: rebeccapurple;
+    font-weight: bolder;
+}
+
+.lista-pseudoclases li:nth-child(even) {
+    background-color: cadetblue;
+}
+
+.lista-pseudoclases li:nth-child(odd) {
+    background-color: rgb(255, 0, 242);
+}
+
+.articulo p:first-of-type {
+    background-color: burlywood;
+}
+
+.articulo p:last-of-type {
+    background-color: burlywood;
+}
+
+.articulo p:nth-last-of-type(3) {
+    background-color: burlywood;
+}
+
+.articulo *:not(p) {
+    background-color: beige;
+}
+
+
+/*PSEUDOELEMENTOS
+
+Estas se generan con doble (::)
+
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements*/
+
+.saga-geminis::before {
+    content: " 🐱‍🏍";
+}
+
+.saga-geminis::after {
+    content: "♊ ";
+}
+
+.saga-precio::before {
+    content: "$";
+    font-weight: bold;
+}
+
+.saga-precio::after {
+    content: " USD";
+    font-weight: bold;
+}
+
+.p-pseudoelementos::first-letter {
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.p-pseudoelementos::selection {
+    color: greenyellow;
+    background-color: black;
+}
+
+.input-pseudoelementos::placeholder {
+    color: olive;
+}
+
+
+/*AGRUPAR SELECTORES*/
+
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea {
+    border-color: chartreuse;
+    border-width: 2px;
+    border-style: dashed;
+    background-color: black;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+    margin: 2px;
 }
