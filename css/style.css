@@ -322,3 +322,24 @@ Identificadores-----------------------0,1,0,0
 Estilos en linea----------------------1,0,0,0
 !importan---------Este rompe la wspecificidad
 */
+
+/* Practica de cascada y especificidad */
+blockquote{
+    background-color: burlywood;
+}
+
+blockquote.cita-marco{
+    background-color: tomato;
+}
+
+.cita-marco{
+    background-color: cornflowerblue;
+}
+
+#cita-marco{
+ background-color: lightgreen;
+}
+
+blockquote#cita-marco{
+    background-color: lightsalmon;
+}
