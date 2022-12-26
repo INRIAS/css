@@ -8,7 +8,7 @@
 
 /* Forma no usual de llamar otra hoja porque es bloqueante*/
 
-@import url("style2.css");
+/* @import url("style2.css"); */
 h1 {
     color: brown;
     background-color: black;
