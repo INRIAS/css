@@ -52,8 +52,9 @@ CAJA EN LÍNEA
     nunca en vertical
 
 CAJA DE BLOQUE
--Ocupan todo el ancho diponible.
+-Ocupan todo el ancho diponible, lo que genera salos de linea.
 -Tienen dimensiones modificables(Alto y Ancho).
 -No permiten otros elementos a su lado(Anque especifiquen todo su ancho siguen utilizando todo el espacio)
 
 */
+
