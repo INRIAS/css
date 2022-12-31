@@ -42,3 +42,18 @@ body{
     padding: 10px;
     margin: 20px;
 }
+
+/* 
+CAJA EN LÍNEA
+-Ocupan el espacion necesario para mostrar su contenido.
+-No tienen dimesiones modificables(Alto y Ancho)
+-Permiten otros elementos a su lado
+-Padding y Margin solo empujan elemntos adyacentes en horizontal
+    nunca en vertical
+
+CAJA DE BLOQUE
+-Ocupan todo el ancho diponible.
+-Tienen dimensiones modificables(Alto y Ancho).
+-No permiten otros elementos a su lado(Anque especifiquen todo su ancho siguen utilizando todo el espacio)
+
+*/
