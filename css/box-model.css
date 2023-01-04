@@ -80,3 +80,21 @@ CAJA DE BLOQUE
 .caja-linea {
     margin: 48px;
 }
+
+
+/* Propiedad Display
+Inline
+Block
+Inline-block: Se comporta como elementos de líne pero acepta modificar su dimesiones(Alto y ancho)
+None:desaparece el elemento
+Table
+List-item
+Flex: FlexBox
+Grid: Clases de grid
+*/
+
+.caja-none,
+.caja-linea-bloque {
+    background-color: darkolivegreen;
+    color: white;
+}
