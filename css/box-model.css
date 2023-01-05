@@ -94,7 +94,54 @@ Grid: Clases de grid
 */
 
 .caja-none,
-.caja-linea-bloque {
+.caja-linea-bloque,
+.caja-hidden {
     background-color: darkolivegreen;
     color: white;
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.caja-linea-bloque {
+    display: inline-block;
+}
+
+.caja-none {
+    display: none;
+}
+
+
+/*Visibility: Si se requiere ocultar pero manteniendo el espacio*/
+
+.caja-hidden {
+    visibility: hidden;
+}
+
+
+/*Overflow*/
+
+.overflow {
+    background-color: darkturquoise;
+    width: 200px;
+    height: 100px;
+    overflow: auto;
+}
+
+
+/*Tamaño de Caja*/
+
+.box-sizing-content,
+.box-sizing-border {
+    background-color: deepskyblue;
+    box-sizing: content-box;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border: thick solid black;
+    /* box-sizing: border-box; */
+}
+
+.box-sizing-border {
+    box-sizing: border-box;
 }
