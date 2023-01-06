@@ -145,3 +145,32 @@ Grid: Clases de grid
 .box-sizing-border {
     box-sizing: border-box;
 }
+
+.containter-col-3 {
+    background-color: burlywood;
+    /* width: 50%; */
+    width: 600px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.containter-col-3>* {
+    /* width: 33.3%; */
+    width: 200px;
+    border: thin solid red;
+    float: left;
+    /* box-sizing: border-box; */
+}
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
