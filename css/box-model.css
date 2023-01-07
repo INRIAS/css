@@ -119,7 +119,7 @@ Grid: Clases de grid
 }
 
 
-/*Overflow*/
+/*Overflow: encajar el contenido*/
 
 .overflow {
     background-color: darkturquoise;
@@ -173,4 +173,56 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+
+/*Floats*/
+
+.container-floats {
+    background-color: cornflowerblue;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/*Colapso de margenes verticales*/
+
+.margin-collapse {
+    background-color: skyblue;
+}
+
+.margin-collapse section {
+    border: thin solid black;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.margin-collapse span {
+    display: inline-block;
+    border: thin solid black;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+
+/*Centrado de Cajas*/
+
+.sitio-web {
+    border: thin solid black;
+    background-color: thistle;
+    width: 800px;
+    height: 1000px;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
