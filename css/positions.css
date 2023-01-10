@@ -18,7 +18,8 @@ Tipos de Posicionamiento::after
 -fixed
 -sticky
 
-Para mover los elementos posicionados se activan las propiedades:
+Para mover los elementos posicionados se activan las
+propiedades:
 -top (vertical - eje Y)
 -bottom (vertical - eje Y)
 -left (horizontal - eje X)
@@ -27,3 +28,15 @@ Para mover los elementos posicionados se activan las propiedades:
 
 las propiedades no funcionan con el valor de la static.
 */
+
+
+/*Static: Es el valor por defecto , significa que el elemento
+respeta el flujo del documento html por lo que no puede mover
+ni posicionar*/
+
+.static {
+    background-color: yellow;
+    position: static;
+    top: 10px;
+    left: 10px;
+}
