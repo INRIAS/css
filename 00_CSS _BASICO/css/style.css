@@ -8,7 +8,9 @@
 
 /* Forma no usual de llamar otra hoja porque es bloqueante*/
 
+
 /* @import url("style2.css"); */
+
 h1 {
     color: brown;
     background-color: black;
@@ -327,39 +329,42 @@ LA herencia es la capacidad de obtener (heredar) los valores de sus  ancestros m
 https://web.dev/learn/css/inheritance/
 */
 
+
 /* Practica de cascada y especificidad */
-blockquote{
+
+blockquote {
     background-color: burlywood;
 }
 
-blockquote.cita-marco{
+blockquote.cita-marco {
     background-color: tomato;
 }
 
-.cita-marco{
+.cita-marco {
     background-color: cornflowerblue;
 }
 
-#cita-marco{
- background-color: lightgreen;
+#cita-marco {
+    background-color: lightgreen;
 }
 
-.cita-marco{
+.cita-marco {
     background-color: chartreuse !important;
     font-size: 24px;
     border-style: dotted;
     border-color: blueviolet;
 }
 
-blockquote#cita-marco{
+blockquote#cita-marco {
     background-color: lightsalmon;
 }
+
 
 /*Herencia
 
 */
 
-.cita-marco cite{
+.cita-marco cite {
     background-color: aqua;
     background-color: inherit;
     font-size: initial;
@@ -367,11 +372,10 @@ blockquote#cita-marco{
     border-color: inherit;
 }
 
+
 /* Reseteo y Normalizes
 
 1-https://meyerweb.com/eric/tools/css/reset/
 2-https://necolas.github.io/normalize.css/
 
 */
-
-
