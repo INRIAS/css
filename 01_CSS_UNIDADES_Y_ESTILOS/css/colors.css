@@ -1,0 +1,79 @@
+.color-by-name {
+    background-color: coral;
+    color: rebeccapurple;
+    border: thick solid greenyellow;
+}
+
+
+/*
+sistema Hexadecimal
+01023456789ABCDEF
+
+-Son Colores son de 6 digitos
+-Todos empiezan con un #
+-Segido de 2 digitos RED
+-Segido de 2 digitos Green
+-Segido de 2 digitos Blue
+-(#FF00CC)
+
+*/
+
+.color-hex {
+    background-color: #ff6600;
+    background-color: #ff660050;
+    background-color: #ff0000;
+    color: rebeccapurple;
+    border: thick solid greenyellow;
+    border: thick solid #ff0000;
+    border: thick solid #00ff00;
+    border: thick solid #0000ff;
+    border: thick solid #000000;
+}
+
+
+/*
+sistema RGB
+Acepta 8 bits por canal
+Byte(0/1) 2 elevado a la potencia de 8
+*/
+
+.color-rgb {
+    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 255, 0);
+    background-color: rgb(0, 0, 255);
+    background-color: rgba(0, 0, 255, 0.8);
+    color: rebeccapurple;
+    border: thick solid rgb(0, 0, 0);
+}
+
+
+/*
+sistema HSL
+HueSaturationLightness(Tono-Saturación-Luminosidad)
+El primer valor es el Hue(Circulo Cromatico)0-360°
+0°- Red
+60°- Yellow
+120°- Green
+180°- Cyan
+240°- Blue
+300°- Magenta
+
+Saturation: es la intencidad del color.
+0%-   Escala de grises
+100%- Color Puro
+
+Lightness:Luminosidad del color
+0%-   Negro
+100%- Blanco
+*/
+
+.color-hsl {
+    background-color: hsl(0, 100%, 50%);
+    background-color: hsl(60, 100%, 50%);
+    background-color: hsl(120, 100%, 50%);
+    background-color: hsl(180, 100%, 50%);
+    background-color: hsl(240, 100%, 50%);
+    background-color: hsl(300, 100%, 80%);
+    color: hsla(0, 0%, 0%, 0.5);
+    border: thick solid hsla(240, 100%, 50%, 1);
+}
