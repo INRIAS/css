@@ -77,3 +77,9 @@ Lightness:Luminosidad del color
     color: hsla(0, 0%, 0%, 0.5);
     border: thick solid hsla(240, 100%, 50%, 1);
 }
+
+.color-transparent-current {
+    background-color: darkmagenta;
+    background-color: transparent;
+    background-color: currentColor;
+}
