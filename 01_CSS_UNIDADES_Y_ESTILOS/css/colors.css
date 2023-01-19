@@ -83,3 +83,16 @@ Lightness:Luminosidad del color
     background-color: transparent;
     background-color: currentColor;
 }
+
+/* Opacity aplica a todo el bloque donde se este usando */
+.opacity{
+    background-color:orchid;
+    color: navy;
+    border: thin solid black;
+    opacity: .5;
+    opacity: .8;
+    opacity: 1;
+}
+
+/* Unidades de medida */
+
