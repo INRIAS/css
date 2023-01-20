@@ -22,3 +22,53 @@ vw, vh, vmin, vmax - al tamaño de viewport
 Conversiones entre unidades http://pxtoem.com/
 
 */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+/*Unidad de Pixeles
+No recomendable para fuentes
+*/
+
+.pixels {
+    background-color: cadetblue;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    font-size: 16px;
+    /*Default*/
+    border: thick solid rebeccapurple;
+}
+
+
+/*UNIDADES RELATIVAS
+em, rem, ex, ch.
+em - basada en la anchura de la "m" de la fuente del elemento
+1em = 16px
+*/
+
+.ems {
+    background-color: cadetblue;
+    /* width: 500px; */
+    /* height: 400px; */
+    padding: 1em;
+    font-size: 24px;
+    /*Default*/
+    border: 5px solid rebeccapurple;
+}
+
+.em-child {
+    background-color: salmon;
+    border: thick solid beige;
+    margin: 0.5em;
+    padding: 1em;
+    font-size: 2em;
+}
