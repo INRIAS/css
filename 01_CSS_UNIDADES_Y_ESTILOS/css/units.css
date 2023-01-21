@@ -51,7 +51,7 @@ No recomendable para fuentes
 
 /*UNIDADES RELATIVAS
 em, rem, ex, ch.
-em - basada en la anchura de la "m" de la fuente del elemento
+EM- basada en la anchura de la "m" de la fuente del elemento
 1em = 16px
 */
 
@@ -72,3 +72,31 @@ em - basada en la anchura de la "m" de la fuente del elemento
     padding: 1em;
     font-size: 2em;
 }
+
+
+/*
+REM - basada en la anchura de la "m" de la fuente del elemento raíz(HTML)
+
+*/
+
+.rems {
+    background-color: cadetblue;
+    /* width: 500px; */
+    /* height: 400px; */
+    padding: 1rem;
+    font-size: 24px;
+    /*Default*/
+    border: 5px solid rebeccapurple;
+}
+
+.rem-child {
+    background-color: salmon;
+    border: thick solid beige;
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+
+/*Ex - basada en la altura de la "x" de la fuente del elemento padre
+*/
