@@ -100,3 +100,31 @@ REM - basada en la anchura de la "m" de la fuente del elemento raíz(HTML)
 
 /*Ex - basada en la altura de la "x" de la fuente del elemento padre
 */
+
+.ex {
+    background-color: cadetblue;
+    /* width: 500px; */
+    /* height: 400px; */
+    padding: 1ex;
+    font-size: 24px;
+    /*Default*/
+    border: 5px solid rebeccapurple;
+}
+
+.ex-child {
+    background-color: salmon;
+    border: thick solid beige;
+    margin: 0.5ex;
+    padding: 1ex;
+    font-size: 2ex;
+}
+
+/*CH - bassada en la anchura del "0" de la fuente del elemento
+Este se ajusta a los caracteres que puedas requerir dentro de un contenedor
+*/
+
+.ch {
+    background-color: cadetblue;
+    width: 11ch;
+    border: 5px solid rebeccapurple;
+}
