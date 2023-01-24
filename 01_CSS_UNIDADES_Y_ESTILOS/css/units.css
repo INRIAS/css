@@ -25,12 +25,18 @@ Conversiones entre unidades http://pxtoem.com/
 
 html {
     box-sizing: border-box;
+    background-color: black;
 }
 
 *,
 *::after,
 *::before {
     box-sizing: inherit;
+}
+
+body {
+    background-color: bisque;
+    /* margin: 0; */
 }
 
 
@@ -119,6 +125,7 @@ REM - basada en la anchura de la "m" de la fuente del elemento raíz(HTML)
     font-size: 2ex;
 }
 
+
 /*CH - bassada en la anchura del "0" de la fuente del elemento raiz HTML
 Este se ajusta a los caracteres que puedas requerir dentro de un contenedor
 */
@@ -127,4 +134,53 @@ Este se ajusta a los caracteres que puedas requerir dentro de un contenedor
     background-color: cadetblue;
     width: 11ch;
     border: 5px solid rebeccapurple;
+}
+
+
+/*PORCENTAJES*/
+
+.percentages {
+    background-color: darkkhaki;
+    padding: 5%;
+    width: 80%;
+    font-size: 100%;
+    margin: 20% 10%;
+    height: 100%;
+}
+
+.height-parent {
+    background-color: brown;
+    width: 500px;
+    height: 500px;
+}
+
+.height-child {
+    background-color: coral;
+    width: 50%;
+    height: 50%;
+}
+
+
+/*
+vw, vh, vmin, vmax - al tamaño de viewport
+No importa los parientes se basa si o si en el viewport
+*/
+
+.viewport {
+    background-color: darkcyan;
+    width: 50vw;
+    /*Recuerda que el body tiene margenes por defecto y las barras de scroll tambien forman parte del viewport a diferencia que no maneja de los porcentajes*/
+    width: 100vw;
+    height: 50vh;
+    font-size: 5vw;
+    padding: 2vh 2vw;
+    /* overflow-y: auto; */
+}
+
+.vmin,
+.vmax {
+    background-color: darksalmon;
+    border: thick solid cyan;
+    width: 50vmax;
+    height: 50vmin;
 }

@@ -1,0 +1,47 @@
+/*Tiene un alcance dependiendo del scope y aplicadas a un selector*/
+
+:root {
+    --default-bgc: skyblue;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.custom-props-1 {
+    --primary-color: gray;
+    --font-size: 32px;
+    background-color: var(--primary-color);
+}
+
+.custom-props-2 {
+    background-color: var(--default-bgc);
+    border: thin solid var(--border-color);
+    padding: 1rem;
+}
+
+.custom-props-3 {
+    font-size: var(--font-size);
+    border: thin solid var(--border-color);
+}
+
+.title-props {
+    background-color: var(--default-bgc);
+    color: var(--font-size, blue);
+}
+
+.ch10 {
+    --padding-size: 2ch;
+    --num-ch: 10ch;
+    background-color: var(--default-bgc);
+    width: 10ch;
+    padding: var(--padding-size);
+    font-size: 2rem;
+    width: calc(var(--num-ch)+ var(--padding-size)*2);
+}
