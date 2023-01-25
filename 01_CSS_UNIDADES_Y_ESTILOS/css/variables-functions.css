@@ -40,8 +40,14 @@ html {
     --padding-size: 2ch;
     --num-ch: 10ch;
     background-color: var(--default-bgc);
-    width: 10ch;
-    padding: var(--padding-size);
     font-size: 2rem;
-    width: calc(var(--num-ch)+ var(--padding-size)*2);
+    padding: var(--padding-size);
+    width: 10ch;
+    /*El calc() requiere que entre los signos de operacion hayan espacion hayan espacion para su correcto proceso*/
+    width: calc(var(--num-ch)+var(--padding-size)*2);
+}
+
+.min-max {
+    background-color: var(--default-bgc);
+    margin-top: 1rem;
 }
