@@ -1,0 +1,64 @@
+/*
+Estilos de Fuentes
+font-family/ Familias tipograficas por defaul
+font-size/ Tamaño de la tipografia
+font-weight/ Peso de la fuente
+font-style/ Italica, Normal
+font-variant/ Capitaliza todo el texto a mayusculas
+line-height
+font: shorthand/ font: italic small-caps bolder 10px/1.5 sand-serif;
+
+
+*/
+
+.font {
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: lighter;
+    font-style: oblique;
+    font-variant: small-caps;
+    line-height: 1.5;
+    font: italic small-caps bolder 10px/1.5 sand-serif;
+}
+
+
+/*
+Formato Woff o Woff2 Web open Ont Format
+
+font-display:
+    auto - permite que el navegador utilice el metodo predeterminado que suele ser block
+    block - oculta brevemente el texto hasta que la fuente haya sido descargada por completo
+    swap - indica al navegador que utilice fuente alternativa para mostrar el texto hasta que la fuente personalizada haya cargado por completo
+    fallback - oculatará el texto, luego lo cargará con la fuente alternativa y finalmente aplicará la fuente personalizada
+*/
+
+
+/*REGLAJE #1*/
+
+@font-face {
+    font-family: "Chalet";
+    /* src: url("../assets/Chalet.woff")format(woff),url("../assets/Chalet.woff2")format(woff); */
+    src: url("../assets/Chalet.woff")format(woff);
+    font-display: swap;
+}
+
+.chalet {
+    /*Poner una segunda opcion segura por si en un punto la fuente no carga*/
+    font-family: "Chalet", sans-serif;
+    font-size: 2rem;
+}
+
+
+/*REGLAJE #2*/
+
+@font-face {
+    font-family: "Pecita";
+    /* src: url("../assets/Chalet.woff")format(woff),url("../assets/Chalet.woff2")format(woff); */
+    src: url("../assets/Pecita.woff")format(woff);
+    font-display: swap;
+}
+
+.pecita {
+    font-family: "Pecita", cursive;
+    font-size: 2rem;
+}
