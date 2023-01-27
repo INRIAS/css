@@ -62,3 +62,22 @@ font-display:
     font-family: "Pecita", cursive;
     font-size: 2rem;
 }
+
+
+/*GOOGLE FONT*/
+
+.font-google {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+
+/*Estilos
+Text-align
+Text-decoration
+Text-indent
+Text-shadow
+Text-transform
+
+letter-spacing
+*/
