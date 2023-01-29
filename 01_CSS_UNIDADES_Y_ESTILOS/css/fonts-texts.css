@@ -73,11 +73,27 @@ font-display:
 
 
 /*Estilos
-Text-align
-Text-decoration
-Text-indent
-Text-shadow
-Text-transform
+Text-align: alineacion del texto en su bloque
+Text-decoration: quita o pone decoraciones al texto.
+Text-indent: Le da sangria a la primera linea del texto
+Text-shadow: sombras al texto
+Text-overflow: le da puntos suspencivos a un texto extenso de su contenedor con 2 condiciones aplicadas:
+    -Overflow:hidden.
+    -white-space:nowrap.
+Text-transform:
 
 letter-spacing
 */
+
+.text {
+    background-color: cadetblue;
+    font-size: 2rem;
+    text-align: left;
+    width: 50%;
+    /* height: 200px; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: underline;
+    text-indent: 1rem;
+    text-overflow: ellipsis;
+}
