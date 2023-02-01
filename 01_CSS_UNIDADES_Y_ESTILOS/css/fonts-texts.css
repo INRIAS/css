@@ -79,21 +79,43 @@ Text-indent: Le da sangria a la primera linea del texto
 Text-shadow: sombras al texto
 Text-overflow: le da puntos suspencivos a un texto extenso de su contenedor con 2 condiciones aplicadas:
     -Overflow:hidden.
-    -white-space:nowrap.
-Text-transform:
+    -white-space:nowrap. Indica que hacer con los espacios en blanco
+Text-transform:Poner en mayusculas o minusculas un contenido
 
-letter-spacing
+letter-spacing:realiza un kerline al texto deseado
+
+white-space:
+    -normal:Solo cuenta un espacio entre texto
+    -nowrap:todo el texto en una misma linea
+    -pre: respeta los espacios deseados
+    -pre-wrap: respeta los espacios y limites dentro de un contenedor
+
+wordbreak: roper palabras al final de una linea de texto
+word-spacing: espacio entre palabras para o emmititr rios y calaveras
+writing-mode:poner texto en horizontal u o vertical
 */
 
 .text {
     background-color: cadetblue;
     font-size: 2rem;
+    text-align: center;
     text-align: left;
+    text-decoration: overline;
+    text-decoration: none;
+    text-indent: 1rem;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: lowercase;
+}
+
+.text-overflow {
+    background-color: cadetblue;
+    border: thin solid black;
+    padding: 1rem;
     width: 50%;
-    /* height: 200px; */
+    /* Text Overflow */
+    text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    text-decoration: underline;
-    text-indent: 1rem;
-    text-overflow: ellipsis;
+
 }
