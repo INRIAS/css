@@ -83,9 +83,7 @@ Text-overflow: le da puntos suspencivos a un texto extenso de su contenedor con 
     -Overflow:hidden.
     -white-space:nowrap. Indica que hacer con los espacios en blanco
 Text-transform:Poner en mayusculas o minusculas un contenido
-
-letter-spacing:realiza un kerline al texto deseado
-
+letter-spacing:realiza un kerling al texto deseado
 white-space:
     -normal:Solo cuenta un espacio entre texto
     -nowrap:todo el texto en una misma linea

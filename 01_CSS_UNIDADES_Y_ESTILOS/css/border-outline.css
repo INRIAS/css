@@ -1,0 +1,18 @@
+.border-radius {
+    background-color: #000000;
+    width: 400px;
+    height: 400px;
+    margin: 2rem auto;
+    border: thin solid green;
+    border-radius: 50%;
+}
+
+.border-radius-2 {
+    background-color: #000000;
+    width: 400px;
+    height: 400px;
+    margin: 2rem auto;
+    border: thin solid green;
+    border-radius: 2rem / 4rem;
+
+}
