@@ -1,0 +1,47 @@
+.box{
+    margin: 2rem auto;
+    width: 300px;
+    height: 300px;
+    border: thick dashed red;
+}
+
+/* Background
+-Background-color: define el color de fondo del elemento
+-Background-image: define la iafen de fondo del elemento.
+-Bacground-size: define el tamaño de fondo de la imagen, primer valor x, segundo valor y
+    -covercambia el tamaño de la imagen para asegurarse de que permanezca completamente visible.
+    -containcambia el tamaño del fondo para asegurarse que de que el elemento este completamente cubierto
+-Bacground-repeat: definde como se repite la iagen de fondo del eleento
+-Bacground-position:
+    - Define la posicion de la imagen de fondo, primer  valor x, segundo valor y, si no se especifica un segundo valor este sera centrado.
+    - Aparte del valor nuerico este se puede definir con palabras:
+    center, top, right, bottom, left.
+-Bacground-clip: define cuanto debe extenderse el fondo dentro del elemento.
+-Bacground-origin: define el origen de la imagen de fondo.
+-Bacground-attachment:define como se comportara la imagen de fondo al despazarse por la pagina.
+*/
+
+.bg-color{
+    background-color: black;
+}
+
+.bg-image{
+    background-image: url("../assets/favicon.png");
+}
+
+.bg-size{
+    background-image: url("../assets/puesta-sol.jpg");
+    background-size: 300px 200px;
+    background-size: 300px;
+    background-size: cover;
+    background-size: contain;
+}
+
+.bg-repeat{
+    background-image: url("../assets/puesta-sol.jpg");
+    background-size: 100px;
+    background-repeat: repeat;
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+}
