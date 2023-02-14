@@ -81,3 +81,24 @@
     background-origin: border-box;
     background-origin: content-box;
 }
+
+.bg-attachment {
+    background: cyan;
+    background-image: url("../assets/puesta-sol.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    background-attachment: scroll;
+    background-attachment: fixed;
+}
+
+.bg-multiple {
+    background: url("../assets/arbol.png") no-repeat center bottom, url("../assets/aves.png") no-repeat center bottom fixed, url("../assets/cielo.png") no-repeat center top;
+}
+
+.bg-art {
+    width: 1000px;
+    height: 700px;
+    background: url("../assets/arbol.png") no-repeat center bottom, url("../assets/aves.png") no-repeat center bottom fixed, url("../assets/cielo.png") no-repeat center top;
+}

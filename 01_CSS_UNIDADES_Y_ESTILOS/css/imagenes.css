@@ -1,0 +1,16 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    border: medium solid black;
+    width: 30%;
+}
+
+.card img {
+    width: 100%;
+    object-fit: fill;
+    object-fit: cover;
+    object-position: left top;
+}
