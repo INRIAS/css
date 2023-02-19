@@ -36,4 +36,22 @@
 .list-3 li {
     background-color: aquamarine;
     list-style: lower-roman inside;
+    text-align: justify;
+}
+
+.text-column-4 {
+    list-style-position: inside;
+    column-count: 4;
+    column-gap: 2rem;
+    column-rule: medium solid #cccccc;
+    column-width: 100px;
+    margin-left: 10px;
+}
+
+.text-column-3 {
+    column-count: 3;
+    column-gap: 2rem;
+    column-rule: thin solid red;
+    column-width: 100px;
+    margin-left: 10px;
 }
