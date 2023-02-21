@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formularios.css">
+    <title>Formularios con CSS</title>
+</head>
+
+<body>
+    <h1>Formularios con CSS</h1>
+    <form class="contact-form" action="https://formsubmit.co/inrias898@gmail.com" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre solo acepta letras y espacios en blanco" required>
+
+        <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Tipo de correo invalido" required>
+
+        <textarea name="comentarios" cols="30" rows="10" placeholder="Escribe tu comentario" required></textarea>
+
+        <input type="submit">
+    </form>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="../00_CSS _BASICO/00_index.html#temario-css">Volver a inicio 🖕</a>
+</body>
+
+</html>
