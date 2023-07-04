@@ -102,3 +102,63 @@
 50. * Estilos de Formularios
 51. * Formulario de Contacto con CSS
 52. * Despedida
+
+## 📝 ÍNDICE:
+1. * Bienvenida
+2. * Estilos iniciales para nuestro documento
+3. * Sombra a las cajas (box-shadow)
+4. * Sombra a los textos (text-shadow)
+5. * Sombras múltiples
+6. * Filtro de sombras (drop-shadow)
+7. * Degradados lineales (linear-gradient)
+8. * Degradados radiales (radial-gradient)
+9. * Degradados cónicos (conic-gradient)
+10. * Patrones con degradados
+11. * Gráficas con degradados
+12. * Filtros (filter) 
+13. * Filtros múltiples
+14. * Filtros a fondos (backdrop-filter)
+15. * Modo Dark/Light con filtros
+16. * Modos de Mezcla (mix-blend-mode)
+17. * Modos de Mezcla a fondos (background-blend-mode)
+18. * Máscaras (clip-path)
+19. * Formas (shape-outside)
+20. * Sitio One Page Scroll (scroll-margin & scroll-behaivor)
+21. * Ajuste del Scroll Efecto Slides Verticales (scroll-snap-type & scroll-snap-align)
+22. * Ajuste del Scroll Efecto Carrusel Horizontal (scroll-snap-type & scroll-snap-align)
+23. * Texto con Degradado
+24. * Movimiento en CSS
+25. * Transiciones
+26. * Propiedades Animables
+27. * Transiciones Múltiples
+28. * Porqué no usar la palabra all en tus transiciones
+29. * El Algoritmo de CSS y su efecto sobre las transiciones
+30. * Transformaciones en 2D
+31. * Transformación Matrix 2D
+32. * Transformaciones 2D Múltiples
+33. * Activando la Perspectiva 3D
+34. * Transformaciones en 3D
+35. * Transformación Matrix 3D
+36. * Transformaciones 3D Múltiples
+37. * Origen de Transformación (transform-origin)
+38. * Flip Cards con transiciones y transformaciones
+39. * Animaciones
+40. * Propiedades de Animación en CSS
+41. * Linea de tiempo y fotogramas claves en CSS
+42. * Animaciones Múltiples
+43. * Efecto fadein & fadeout
+44. * Efecto shake
+45. * Efecto pulse
+46. * ❤️ Eres el CSS de mi HTML ❤️
+47. * Spinner / Loader animado
+48. * Botones Animados (maquetación)
+49. * Botones Animados (micro interacciones)
+50. * Botones con Gradientes Animados
+51. * Menú de Pestañas Tabs (maquetación)
+52. * Menú de Pestañas Tabs (animación)
+53. * Menú Off Canvas (marcado HTML)
+54. * Botón de Hamburguesa Animado
+55. * Menú Off Canvas (maquetación y animación)
+56. * Ventana Modal
+57. * Intro Películas Star Wars
+58. * Despedida

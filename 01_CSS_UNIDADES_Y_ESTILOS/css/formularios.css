@@ -34,6 +34,7 @@ html {
     padding: .5rem;
     border-radius: .25rem;
     color: var(--form-text-color);
+    caret-color: red;
 }
 
 .contact-form>*::placeholder {
@@ -60,10 +61,10 @@ html {
     resize: none;
 }
 
-.contact-form>*:valid {
+.contact-form>*[required]:valid {
     border: thin solid var(--form-success-color);
 }
 
-.contact-form>*:invalid {
+.contact-form>*[required]:invalid {
     border: thin solid var(--form-error-color);
 }
