@@ -7,10 +7,10 @@
 
 -Unidades Relativas:
     em,rem, ex, ch al tamaño de la fuente
-    em - basada en la anchura de la "m" de la fuente del elemento
-    rem - basada en la anchura de la "m" de la fuente del elemento raíz(HTML)
+    em - basada en la anchura de la "m" de la fuente del elemento(Dependiendo del tamaño de la letra como este, este es su base inicial para cualquir propiedad)
+    rem - basada en la anchura de la "m" de la fuente del elemento raíz(HTML su base predeterminada es 16)
     ex - basada en la altura de la "x" de la fuente del elemento
-    ch - bassada en la anchura del "0" de la fuente del elemento
+    ch - basada en la anchura del "0" de la fuente del elemento(Ch es caracteres se vasa en nuero y hace referencia a esa cantidad en caracteres)
     % - al tamaño del contenedor
 
 vw, vh, vmin, vmax - al tamaño de viewport

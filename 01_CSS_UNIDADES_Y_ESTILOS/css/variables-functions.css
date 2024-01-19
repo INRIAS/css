@@ -43,7 +43,7 @@ html {
     font-size: 2rem;
     padding: var(--padding-size);
     width: 10ch;
-    /*El calc() requiere que entre los signos de operacion hayan espacion hayan espacion para su correcto proceso*/
+    /*El calc() requiere que entre los signos de operacion hayan espacio para su correcto proceso*/
     width: calc(var(--num-ch)+var(--padding-size)*2);
 }
 

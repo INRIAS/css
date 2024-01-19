@@ -103,7 +103,7 @@
 51. * Formulario de Contacto con CSS
 52. * Despedida
 
-## 📝 ÍNDICE:
+## 📝 ÍNDICE Efectos Visuales y Efectos CSS:
 1. * Bienvenida
 2. * Estilos iniciales para nuestro documento
 3. * Sombra a las cajas (box-shadow)
