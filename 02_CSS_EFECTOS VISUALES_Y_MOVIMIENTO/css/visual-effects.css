@@ -157,3 +157,21 @@ y en cada color se puede colocar el porcentaje de color deseado de 1 a 100%
     color: #000;
     filter: invert(0.9);
 }
+
+.absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.blend-modes img{
+    mix-blend-mode: normal;
+    mix-blend-mode: color;
+}
+.bg-blend-mode{
+    background-image: url(..//assets/BuenosDias.jpg), url(..//assets/puesta-sol.jpg);
+    background-size: cover;
+    background-blend-mode: normal;
+    background-blend-mode: darken;
+}
