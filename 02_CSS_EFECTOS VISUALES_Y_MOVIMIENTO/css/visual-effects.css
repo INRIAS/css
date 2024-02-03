@@ -99,36 +99,41 @@ y en cada color se puede colocar el porcentaje de color deseado de 1 a 100%
     height: 400px;
 }
 
-.card img{
+.card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 0% 50%;
 
-    
+
 }
 
-.filter{
+.filter {
     filter: blur(0.1rem);
-    filter: brightness(0,9);
+    filter: brightness(0, 9);
     filter: contrast(0.9);
     filter: grayscale(.4);
-    filter: sepia(.5); /* Va de 0 a 1 */
-    filter: hue-rotate(30deg); /* va en grados*/
-    filter: opacity(0.1); /*Va de 0 a 1*/
-    filter: saturate(0.1); /*Va de 0 a 1*/
-    filter: invert(.9); /*Va de 0 a 1 inversion*/
+    filter: sepia(.5);
+    /* Va de 0 a 1 */
+    filter: hue-rotate(30deg);
+    /* va en grados*/
+    filter: opacity(0.1);
+    /*Va de 0 a 1*/
+    filter: saturate(0.1);
+    /*Va de 0 a 1*/
+    filter: invert(.9);
+    /*Va de 0 a 1 inversion*/
 }
 
-.filter-multiples{
+.filter-multiples {
     filter: blur(0.1rem) sepia(.5) invert(.9) hue-rotate(60deg);
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
-.backdrop-filter{
+.backdrop-filter {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -138,10 +143,10 @@ y en cada color se puede colocar el porcentaje de color deseado de 1 a 100%
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
 }
 
-.backdrop-filter h4{
+.backdrop-filter h4 {
     font-size: 3rem;
     color: black;
     padding: 2rem;
@@ -152,26 +157,83 @@ y en cada color se puede colocar el porcentaje de color deseado de 1 a 100%
 
 }
 
-.dark-mode{
+.dark-mode {
     background-color: white;
     color: #000;
     filter: invert(0.9);
 }
 
-.absolute{
+.absolute {
     position: absolute;
     top: 0;
     left: 0;
 
 }
 
-.blend-modes img{
+.blend-modes img {
     mix-blend-mode: normal;
     mix-blend-mode: color;
 }
-.bg-blend-mode{
+
+.bg-blend-mode {
     background-image: url(..//assets/BuenosDias.jpg), url(..//assets/puesta-sol.jpg);
     background-size: cover;
     background-blend-mode: normal;
     background-blend-mode: darken;
+}
+
+.clip-path {
+    /* clip-path: circle(1rem);
+    clip-path: circle(50rem);
+    clip-path: circle(100px at top);
+    clip-path: circle(100px at left);
+    clip-path: circle(100px at right);
+    clip-path: circle(100px at bottom);
+    clip-path: circle(100px at right bottom);
+    clip-path: circle(100px at right bottom);
+    clip-path: ellipse(10rem 9rem at center);
+    clip-path:inset(2rem);
+    clip-path:inset(2rem round 1rem); */
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.shape {
+    border: thick solid black;
+    padding: 1rem;
+    margin: 0 auto 5rem;
+    max-width: 800px;
+    font-size: 1,5rem;
+}
+
+.shape img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: 0 50%;
+
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.shape-1 {
+    margin: 4rem 2rem 4rem 0;
+    shape-outside: circle();
+    /* shape-outside: ellipse(); */
+}
+
+.shape-2 {
+    margin: 4rem 0 4rem 2rem;
+    shape-outside: ellipse();
+}
+
+.shape-3 {
+    margin: 4rem 2rem 4rem 0;
+    shape-outside: circle();
 }
