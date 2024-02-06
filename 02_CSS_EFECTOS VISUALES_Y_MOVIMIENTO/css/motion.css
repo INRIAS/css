@@ -45,7 +45,7 @@ transition-delay [Seg|ms]
 */
 
 .transitions .box {
-    background-color: magenta;
+    background-color: #1e2345;
     transition-property: background-color;
     transition-duration: 500ms;
     transition-timing-function: ease;
@@ -55,7 +55,35 @@ transition-delay [Seg|ms]
 }
 
 .transitions .box:hover {
-    background-color: cyan;
-    border-color: red;
+    background-color: #108eb4;
+    border-color: cornflowerblue;
     border-radius: 2rem;
 }
+
+.transitions .card{
+    transition: opacity 1s ease 250ms,
+    filter 2s ease-out 250ms,
+    box-shadow 3s ease-in 250ms,
+    border-color 2s steps(2) 250ms,
+    border-radius 3s ease 250ms;
+    
+}
+
+.transitions .card:hover{
+    opacity: .75;
+    border-color: orchid;
+    filter: blur(.01rem);
+    box-shadow: 1rem 1rem 2rem .5rem #000;
+    border-radius: 5rem;
+}
+
+.transitions .card img{
+    transition: object-position 3s ease 250ms;
+}
+
+
+.transitions .card img:hover{
+    object-position: 100% 50%;
+
+}
+
