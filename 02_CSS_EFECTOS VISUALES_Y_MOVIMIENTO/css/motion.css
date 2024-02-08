@@ -87,3 +87,26 @@ transition-delay [Seg|ms]
 
 }
 
+/* Tranformacion 2d */
+
+.transform-2d img{
+    transition: transform 2s ease 250ms;
+}
+
+.transform-2d img:hover{
+    transform: translateX(4rem);
+    transform: translatey(4rem);
+    transform: translateX(-4rem);
+    transform: translatey(-4rem);
+    transform: translate(-4rem, 4rem);
+    transform: scale(1.1, 1.1);
+    transform: scale(-1.1, -1.1);
+    transform: rotate(-300deg);
+    transform: rotatex(500deg);
+    transform: rotatey(500deg);
+    transform: rotatey(500deg);
+    transform: skewx(20deg);
+    transform: matrix(1,2,2,3,3,4)
+
+}
+
