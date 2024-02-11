@@ -110,3 +110,18 @@ transition-delay [Seg|ms]
 
 }
 
+/* Transformaciones en 3D */
+.transform-3d{
+    perspective:1000px;
+}
+
+.transform-3d img{
+    transition: transform 2s ease-in-out;
+}
+
+.transform-3d img:hover{
+    transform: translateZ(4rem);
+    transform: perspective(1000px) translateZ(4rem);
+    transform: translateZ(4rem);
+}
+
