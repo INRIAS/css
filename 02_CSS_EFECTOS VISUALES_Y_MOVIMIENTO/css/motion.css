@@ -158,7 +158,7 @@ transition-delay [Seg|ms]
     cursor: pointer;
     transition: transform 1s ease-in-out;
     perspective: 10rem;
-    transform-style: preserve-3d;
+    transform-style: preserve-3d;/*Cada Hijo tenga una perspectiva diferente*/
 }
 
 .flip-card-2{
@@ -178,7 +178,7 @@ transition-delay [Seg|ms]
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 0% 50%;/*Cada Hijo tenga una perspectiva diferente*/
+    object-position: 0% 50%;
 } 
 
 .flip-face{
@@ -194,4 +194,49 @@ transition-delay [Seg|ms]
 
 .flip-back{
     transform: rotateY(180deg);
+}
+
+/* Animations 
+Name
+Duration
+timing-fuction
+delay
+Iteration-count
+Direction
+Fill Mode
+Play State
+*/
+
+@keyframes myAwesomeAnimation {
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.my-animation{
+    animation-name: myAwesomeAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* Al inicio se queda con estilos iniciales de la animacion */
+    animation-fill-mode: forwards;
+    /* Al final se queda con los estilos finales de la animacion */
+    animation-fill-mode: backwards;
+    /* Aplica al mismo tiempo forwardis y backwards */
+    animation-fill-mode: both;
+    animation-play-state: paused;
+
+    }
+
+.my-animation:hover{
+    animation-play-state: running;
+    cursor: pointer;
 }
