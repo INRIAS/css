@@ -240,3 +240,53 @@ Play State
     animation-play-state: running;
     cursor: pointer;
 }
+
+@keyframes myAwesomeAnimation2 {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.my-animation-2{
+    animation-name: myAwesomeAnimation2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 250ms;
+    animation-direction: alternate;
+
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.fade-In{
+    font-size: 5vw;
+    animation: fadein 2s linear infinite alternate;
+}
+
+.fade-Out{
+    font-size: 5vw;
+    animation: fadeout 2s linear infinite alternate;
+}
