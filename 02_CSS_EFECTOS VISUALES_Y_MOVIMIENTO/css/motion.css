@@ -401,6 +401,14 @@ Play State
         transform: rotate(360deg);
     }
 }
+@keyframes spinner2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 .spinner{
     background-color: #ccc;
@@ -414,3 +422,88 @@ Play State
     animation: spinner 1s linear infinite;
 }
 
+.contenedor{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+
+}
+
+.spinner-1{
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 5vw;
+    height: 5vw;
+    border: .5vw solid rgb(23, 83, 247);
+    /* border-left-color:#09f; */
+    border-top-color:rgba(0,0,0,0);
+    border-right-color:rgba(0,0,0,0);
+    border-bottom-color:rgba(0,0,0,0);
+    border-radius: 50%;
+    animation: spinner 2s ease-out infinite alternate-reverse backwards;
+}
+
+.spinner-2{
+    position: absolute;
+    margin-left: 50%;
+    margin-right: 50%;
+    background-color: rgba(0,0,0,0);
+    width: 5vw;
+    height: 5vw;
+    border: .5vw solid rgba(23,83,247);
+    /* border-right-color:rgb(255, 0, 0); */
+    border-left-color:rgba(0,0,0,0);
+    border-top-color:rgba(0,0,0,0);
+    border-bottom-color:rgba(0,0,0,0);
+    border-radius: 50%;
+    animation: spinner2 2s ease-out infinite alternate-reverse backwards;
+}
+
+.btn{
+    position: relative;
+    border: none;
+    border-radius: .25rem;
+    padding: .2rem;
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: .25rem .25rem .5rem .25rem rgba(0,0,0,.15);
+
+}
+
+.anim-bottom::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: .25rem;
+    background-color: #d00;
+    transition: width .5s ease, left .5s ease, right .5s ease;
+}
+
+.anim-bottom:hover::after{
+    width: 100%;
+}
+
+.to-left::after{
+    left: 0;
+}
+
+.to-center::after{
+    left: 50%;
+}
+
+.to-center:hover::after{
+    left:0%
+}
+
+.to-right::after{
+    right: 0;
+}
