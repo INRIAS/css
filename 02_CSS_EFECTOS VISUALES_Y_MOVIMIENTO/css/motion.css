@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     font-family: sans-serif;
     font-size: 16px;
+    /* overflow-x: hidden; */
 }
 
 *,
@@ -588,3 +589,65 @@ Play State
 #tab-4:checked~.tab-bg-hover {
     transform: translateX(300%);
 }
+
+/* -------------Menu Off Canvas---------------- */
+
+.off-canvas-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 999;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.off-canvas-burger {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 998;
+    width: 3rem;
+    height: .6rem;
+    background-color: #d00;
+    border-radius: 0.3rem;
+    transform: rotate(0deg) translate(0, -1.2rem);
+    transition: transform .5s ease;
+    transform-origin: top-left;
+
+}
+
+.off-canvas-burger::before,
+.off-canvas-burger::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: .6rem;
+    background-color:#d00;
+    border-radius: 0.3rem;
+    transition: transform .5s ease, background-color 500ms;
+}
+
+.off-canvas-burger::before{
+    transform: rotate(0deg) translate(0, -.9rem);
+    background-color:#d00;
+}
+
+.off-canvas-burger::after{
+    transform: rotate(0deg) translate(0, .3rem);
+    background-color:#d00
+}
+
+.off-canvas-btn:checked+.off-canvas-burger{
+    background-color: transparent;
+}
+.off-canvas-btn:checked+.off-canvas-burger::before{
+    transform: rotate(45deg) translate(0, 0);
+}
+
+.off-canvas-btn:checked+.off-canvas-burger::after{
+    transform: rotate(-45deg) translate(4rem, 5rem);
+}
+
+
