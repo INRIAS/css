@@ -613,8 +613,8 @@ Play State
     background-color: #d00;
     border-radius: 0.3rem;
     transform: rotate(0deg) translate(0, -1.2rem);
-    transition: transform .5s ease;
     transform-origin: top-left;
+    transition: transform .5s ease;
 
 }
 
@@ -626,7 +626,7 @@ Play State
     height: .6rem;
     background-color:#d00;
     border-radius: 0.3rem;
-    transition: transform .5s ease, background-color 500ms;
+    transition: transform .5s ease, background-color 500ms ease;
 }
 
 .off-canvas-burger::before{
@@ -639,15 +639,61 @@ Play State
     background-color:#d00
 }
 
-.off-canvas-btn:checked+.off-canvas-burger{
+.off-canvas-btn:checked + .off-canvas-burger{
     background-color: transparent;
 }
-.off-canvas-btn:checked+.off-canvas-burger::before{
+.off-canvas-btn:checked + .off-canvas-burger::before{
     transform: rotate(45deg) translate(0, 0);
 }
 
 .off-canvas-btn:checked+.off-canvas-burger::after{
-    transform: rotate(-45deg) translate(4rem, 5rem);
+    transform: rotate(-45deg) translate(.4rem, -.4rem);
 }
 
+.off-canvas-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #0008;
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-120%,0);
+    transition: transform 500ms ease-in-out;
 
+}
+
+.off-canvas-menu-container{
+    background-color: #0005;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.off-canvas-link{
+    padding: 2rem;
+    border-bottom: thin solid #d00;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ccc;
+    transition: background-color 300ms ease;
+}
+
+.off-canvas-link:first-child{
+    border-top: thin solid #d00;
+}
+
+.off-canvas-link:hover{
+    background-color: #a005;
+    padding: 2rem;
+}
+
+.off-canvas-btn:checked ~ .off-canvas-menu{
+    transform: translate(0,0);
+}
