@@ -1,0 +1,85 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+.menu-tabs {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+    border-radius: 4rem;
+}
+
+.menu-tabs input[type="radio"] {
+    display: none;
+}
+
+.menu-tabs label {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    /* background-color: black; */
+    transition: font-size 300ms ease-in-out;
+}
+
+.menu-tabs label:hover {
+    font-size: 1.5rem;
+}
+
+.menu-tabs input[type="radio"]:checked+label div{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    transition: margin-bottom 300ms ease;
+}
+
+.menu-tab-bg-hover {
+    position: absolute;
+    width: calc(100% / 4 - .5rem);
+    margin-left: auto;
+    margin-right: auto;
+    height: 3rem;
+    margin-bottom: 1rem;
+    background-color:#fff;
+    /* outline: thin solid aqua; */
+    outline-width: 5px;
+
+    border-radius: 0 0 50% 50%;
+    transition: transform 300ms ease-in-out;
+}
+
+#tab-1:checked~.menu-tab-bg-hover {
+    transform: translateX(0);
+}
+
+#tab-2:checked~.menu-tab-bg-hover {
+    transform: translateX(100%);
+}
+
+#tab-3:checked~.menu-tab-bg-hover {
+    transform: translateX(200%);
+}
+
+#tab-4:checked~.menu-tab-bg-hover {
+    transform: translateX(300%);
+}
