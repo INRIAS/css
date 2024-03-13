@@ -162,6 +162,14 @@ body {
     transform: translateX(0);
 }
 
+.modal-1-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* ------BTN------ */
+
 .btn {
     display: inline-block;
     background-color: green;
@@ -170,8 +178,8 @@ body {
     padding: .5rem;
     margin: 2rem;
     text-align: center;
-    overflow: hidden;
-    border-radius: 3rem;
+    /* overflow: hidden; */
+    border-radius: .3rem;
     color: #fff;
 }
 
@@ -188,3 +196,66 @@ body {
     box-shadow: 0 0 0 3px red, 0 0 0 6px blue, 0 0 0 9px green;
     outline-offset: 3px, 6px, 9px;
 }
+
+.btn-2{
+    outline: thick #000099;
+    background-image: linear-gradient(to left, blue,rgb(6, 12, 92));
+    outline-offset: -1rem;
+    transition: outline 500ms ease-in-out,
+    outline-offset 500ms ease-in-out,
+    box-shadow 1s ease-in;
+}
+
+.btn-2:hover {
+    outline-offset: .5rem;
+    outline: thin solid #0090;
+    outline-width: .3rem;
+    
+}
+
+@keyframes jelly {
+    0%,
+    100% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
+
+  .btn-3:hover{
+    animation: jelly 0.5s;
+  }
+
+  .btn-4{
+    position: relative;
+    z-index: 1;
+    background-color: blueviolet;
+
+  }
+
+  .btn-4::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: cornflowerblue;
+    border-radius: .3rem;
+    transform-origin: center bottom;
+    transform: scaleY(0);
+    transition: transform 1s ease-in-out;
+  }
+
+  .btn-4:hover::before{
+    transform-origin: center top;
+    transform: scaleY(1);
+  }
