@@ -188,8 +188,8 @@ body {
     outline-offset: 0px, 0px, 0px;
     box-shadow: 0 0 0 0px red, 0 0 0 0px blue, 0 0 0 0px green;
     transition: outline 500ms ease-in-out,
-    outline-offset 500ms ease-in-out,
-    box-shadow 500ms ease-in;
+        outline-offset 500ms ease-in-out,
+        box-shadow 500ms ease-in;
 }
 
 .btn-1:hover {
@@ -197,50 +197,54 @@ body {
     outline-offset: 3px, 6px, 9px;
 }
 
-.btn-2{
+.btn-2 {
     outline: thick #000099;
-    background-image: linear-gradient(to left, blue,rgb(6, 12, 92));
+    background-image: linear-gradient(to left, blue, rgb(6, 12, 92));
     outline-offset: -1rem;
     transition: outline 500ms ease-in-out,
-    outline-offset 500ms ease-in-out,
-    box-shadow 1s ease-in;
+        outline-offset 500ms ease-in-out,
+        box-shadow 1s ease-in;
 }
 
 .btn-2:hover {
     outline-offset: .5rem;
     outline: thin solid #0090;
     outline-width: .3rem;
-    
+
 }
 
 @keyframes jelly {
+
     0%,
     100% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
+
     25% {
-      transform: scale(0.9, 1.1);
+        transform: scale(0.9, 1.1);
     }
+
     50% {
-      transform: scale(1.1, 0.9);
+        transform: scale(1.1, 0.9);
     }
+
     75% {
-      transform: scale(0.95, 1.05);
+        transform: scale(0.95, 1.05);
     }
-  }
+}
 
-  .btn-3:hover{
+.btn-3:hover {
     animation: jelly 0.5s;
-  }
+}
 
-  .btn-4{
+.btn-4 {
     position: relative;
     z-index: 1;
     background-color: blueviolet;
 
-  }
+}
 
-  .btn-4::before{
+.btn-4::before {
     content: "";
     z-index: -1;
     position: absolute;
@@ -253,9 +257,36 @@ body {
     transform-origin: center bottom;
     transform: scaleY(0);
     transition: transform 1s ease-in-out;
-  }
+}
 
-  .btn-4:hover::before{
+.btn-4:hover::before {
     transform-origin: center top;
     transform: scaleY(1);
-  }
+}
+
+.btn-5 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    /* color: white; */
+    /* transition: color 0.4s ease-in-out; */
+}
+
+.btn-5::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    bottom: 100%;
+    right: 100%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: darkgoldenrod;
+    transform-origin: center;
+    transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
+    transition: transform 1s ease-in-out;
+}
+
+.btn-5:hover::before {
+    transform: translate3d(50%, 50%, 0) scale3d(15, 15, 15);
+}
