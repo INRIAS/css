@@ -9,15 +9,17 @@
     height: 30vh;
     
     display: flex;/* flex | inline-flex */
-    flex-direction: column; /* row | row-reverse | column | column-reverse| */
+    flex-direction: row; /* row | row-reverse | column | column-reverse| */
     flex-wrap: wrap; /* nowrap | wrap | wrap-reverse */
+    justify-content: space-evenly;/* Flex-Start | Center | Flex-End | Space-between | Space-Around | Space-Evenly */
+    /* Define la alineación de los elemntos hijos, respecto del eje principal */ 
 }
 
 .item{
     background-color: #666;
     color: aliceblue;
     border: medium solid #999;
-    /* width: 20%; */
-    height: 20%;
+    width: 20%;
+    height: 25%;
 
 }
