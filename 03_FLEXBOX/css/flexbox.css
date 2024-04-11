@@ -8,18 +8,31 @@
     background-color: #333;
     height: 30vh;
     
-    display: flex;/* flex | inline-flex */
-    flex-direction: row; /* row | row-reverse | column | column-reverse| */
-    flex-wrap: wrap; /* nowrap | wrap | wrap-reverse */
-    justify-content: space-evenly;/* Flex-Start | Center | Flex-End | Space-between | Space-Around | Space-Evenly */
+    display: flex;
+    /* Define que una caja sera flexbox de bloque o delinea */
+    /* flex | inline-flex */
+    flex-direction: column;
+    /* Define el eje principal row-x column-y */
+    /* row | row-reverse | column | column-reverse| */
+    flex-wrap: wrap;
+    /* Define si la caja flexbox envuelve o no a sus hijos()Saltos de linea autonomos al ancho del contenedor */
+    /* nowrap | wrap | wrap-reverse */
+    justify-content: center;
+    /* Flex-Start | Center | Flex-End | Space-between | Space-Around | Space-Evenly */
     /* Define la alineación de los elemntos hijos, respecto del eje principal */ 
+    align-items: stretch;
+    /* Flex-Start | Center | Flex-End | Stretch | Baseline | Space-Evenly */
+    /* Define la alineación de los elemntos hijos, respecto del eje principal en el eje tranversal u sobrante*/
+    align-content: stretch;
+    /* Flex-Start | Center | Flex-End | Stretch | Baseline | Space-Evenly | stretch */
+    /* Define la alineación de los elemntos hijos, respecto del eje principal en el eje tranversal u sobrante psdt:no funciona cuando los hijos estan en una sola linea*/ 
 }
 
 .item{
     background-color: #666;
     color: aliceblue;
     border: medium solid #999;
-    width: 20%;
-    height: 25%;
+    /* width: 20%; */
+    /* height: 25%; */
 
 }
