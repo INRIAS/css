@@ -1,0 +1,16 @@
+.container{
+    background-color: rgb(83, 13, 233);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: thin solid black;
+}
+
+.item{
+    margin: 5px;
+    background-color: black;
+    border: thin solid black;
+    /* flex-grow: 1; */
+    /* flex-basis: 1000; */
+
+}

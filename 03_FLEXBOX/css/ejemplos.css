@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.titulares {
+    padding: 1rem;
+    background-color: #222;
+    color: #EEE;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    /* padding: 0; */
+
+}
+
+.menu ul a {
+    text-decoration: none;
+}
+
+/* -----Media Q.------ */
+
+@media screen and (min-width: 1024px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu li{
+        padding: 0rem .5rem;
+    }
+}
+
+.hero-image{
+    background-image: url("..//assets/img-p.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+}
+
+.hero-image div{
+    background-color: rgba(0, 0, 0, .4);
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-image{
+    font-size: 4vw;
+    /* font-size: clamp(1rem, 1rem + 3vw, 3rem); */
+}
