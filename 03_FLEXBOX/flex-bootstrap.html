@@ -7,18 +7,72 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/ejemplos2.css">
     <title>Hello, world!</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <section class="bg-info text-white d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly">
-        <article>Item 1</article>
-        <article>Item 2</article>
-        <article>Item 3</article>
-        <article>Item 4</article>
-        <article>Item 5</article>
-    </section>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="flex-grow-1">
+      <h1>Hello, world!</h1>
+      <section class="bg-info text-white d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly">
+          <article>Item 1</article>
+          <article>Item 2</article>
+          <article>Item 3</article>
+          <article>Item 4</article>
+          <article>Item 5</article>
+      </section>
+      <section class="hero-image min-vh-100">
+        <div class="min-vh-100 d-flex justify-content-center align-items-center text-center">
+          <h1>Flex box is Fuckin'COOL</h1>
+        </div>
+      </section>
+      <div class="container">
+        <sectio class="row align-items-lg-center">
+          <article class="col-12 col-lg-6">
+            <h2>Titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sed ullam veniam, quis nostrum modi eaque quibusdam natus facere ea nemo autem maiores repellendus aliquid, hic, quas nam fugit eveniet?</p>
+          </article>
+          <article class="col-12 col-lg-6 ">
+            <img src="./assets/img-p2.jpg" alt="">
+          </article>
+        </sectio>
+        <sectio class="row align-items-lg-center">
+          <article class="col-12 col-lg-6 order-lg-1">
+            <h2>Titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sed ullam veniam, quis nostrum modi eaque quibusdam natus facere ea nemo autem maiores repellendus aliquid, hic, quas nam fugit eveniet?</p>
+          </article>
+          <article class="col-12 col-lg-6">
+            <img src="./assets/img-p3.jpg" alt="" class="img-fluid">
+          </article>
+        </sectio>
+      </div>
+    </main>
+    <footer class="bg-dark text-white">
+      <h3>Sticky</h3>
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

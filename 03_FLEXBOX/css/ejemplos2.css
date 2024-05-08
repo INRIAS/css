@@ -1,0 +1,22 @@
+.hero-image{
+    background-image: url("..//assets/img-p.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+}
+
+.hero-image div{
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.hero-image{
+    font-size: 4vw;
+    /* font-size: clamp(1rem, 1rem + 3vw, 3rem); */
+}
+
+/* -------Articulos-------- */
+img{
+    max-width: 100%;
+    height: auto;
+}
