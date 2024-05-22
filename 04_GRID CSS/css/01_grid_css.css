@@ -85,4 +85,26 @@ img {
     grid-template-rows:repeat(5,auto);
     /* gap:row column */
     gap: 1% 2%;
+    gap: 0;
+}
+
+.grid-explicit .item:nth-child(10){
+    color: cyan;
+    /* grid-row-start: 2; */
+    /* grid-row-end: 3; */
+    /* grid-column-start: 3; */
+    /* grid-column-end: 4; */
+    /* grid-row: 3/4; */
+    /* grid-column: 3/5; */
+    grid-area: 3 / 2 / 4 / 4 ;
+}
+
+.grid-explicit .item:nth-child(12){
+    color: aqua;
+    grid-area: span 2 / span 3;
+}
+
+.grid-explicit .item:nth-child(15){
+    color: aqua;
+    grid-area: 1 / 1n / span 2 / span 3;
 }
