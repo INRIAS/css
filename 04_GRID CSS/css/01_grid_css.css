@@ -108,3 +108,20 @@ img {
     color: aqua;
     grid-area: 1 / 1n / span 2 / span 3;
 }
+
+.grid-line-names{
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr); */
+    grid-template-columns: [line-c1]1fr [line-c2]1fr [line-c3]1fr [line-c4];
+    grid-template-rows: [line-r1]1fr [line-r2]1fr [line-r3]1fr [line-r4];
+}
+
+.grid-line-names .item:nth-child(8){
+    color: aqua;
+    grid-area: line-r1 / line-c2 / line-r2 / line-c3
+    ;
+}
+
+/* Container grid areas */
+
